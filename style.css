@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Permanent+Marker&display=swap');
+/* Body with Background */
+body {
+   margin: 0;
+   padding: 0;
+   padding-top: 50px;
+   font-family: 'Merriweather', serif;
+   background: url("Abstract big data concept background _ Free Vector.jpg") no-repeat center center/cover;
+   background-attachment: fixed;
+   color: black;
+   min-height: 100vh;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body, html {
+   margin: 0;
+   padding: 0;
+   font-family: 'Merriweather', serif;
+}
+body, html {
+   margin: 0;
+   padding: 0;
+   font-family: 'Merriweather', serif;
+}
+.navbar {
+   margin: 0;
+   padding: 25px 0;
+   position: relative;
+   top: 0;
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 25px 0;
+    margin: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.box, .about-box, .skills-section, .education-box, .projects-container, .contact-box {
+    margin: 50px auto;
+    padding: 40px;
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(12px);
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    animation: fadeInUp 1s ease;
+    text-align: center;
+}
+
+.navbar a {
+   text-decoration: none;
+   font-size: 20px;
+   font-weight: 700;
+   color: #fff;
+   padding: 10px 18px;
+   border-radius: 8px;
+   transition: 0.3s;
+}
+.navbar a:hover {
+   background-color: cornsilk;
+   color: #000;
+   transform: translateY(-3px);
+}
+/* Headings */
+h1, h2 {
+   font-family: 'Permanent Marker', cursive;
+   color:darkmagenta;
+   text-align: center;
+}
+/* Common Box Style */
+.box, .about-box, .skills-section, .education-box, .projects-container, .contact-box {
+   background: rgba(255, 255, 255, 0.3);
+   backdrop-filter: blur(12px);
+   border-radius: 15px;
+   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+   margin: 50px auto;
+   padding: 40px;
+   max-width: 800px;
+   animation: fadeInUp 1s ease;
+   color: black;
+   text-align: center;
+}
+/* Hover Effect for All Boxes */
+.box:hover, .about-box:hover, .skills-section:hover, .education-box:hover, .projects-container:hover, .contact-box:hover,
+.skill-card:hover, .project-card:hover, .edu-item:hover {
+   transform: translateY(-8px);
+   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+   transition: 0.3s;
+}
+/* About Section */
+.about-box {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 30px;
+   justify-content: center;
+   align-items: center;
+}
+.about-text {
+   flex: 1;
+   min-width: 250px;
+   font-size: 18px;
+   text-align: left;
+   color: black;
+}
+.about-image img {
+   width: 250px;
+   border-radius: 15px;
+   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+/* Skills Section */
+.skills-section {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   gap: 20px;
+}
+.skill-card {
+   background: rgba(255, 255, 255, 0.3);
+   color: black;
+   border-radius: 15px;
+   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+   padding: 30px;
+   text-align: center;
+   transition: 0.3s;
+   border-top: 8px solid;
+}
+.skill-card:hover .skill-icon {
+   transform: scale(1.2) rotate(5deg);
+}
+.html { border-top-color: #6CBF84; }
+.css { border-top-color: #FF7F50; }
+.js { border-top-color: #FFD700; }
+.python { border-top-color: #9C6CFD; }
+.tailwind { border-top-color: #38bdf8; }
+.skill-icon {
+   font-size: 40px;
+   transition: transform 0.3s;
+}
+/* Education Section */
+.edu-item {
+   display: flex;
+   gap: 20px;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 20px;
+   transition: 0.3s;
+}
+.edu-icon {
+   font-size: 40px;
+}
+/* Projects Section */
+.projects-container {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   gap: 30px;
+   max-width: 1000px;
+   margin: 50px auto;
+   padding: 20px;
+}
+.project-card {
+   background: rgba(255, 255, 255, 0.3);
+   color: #1e1e1e;
+   border-radius: 15px;
+   padding: 30px;
+   text-align: center;
+   font-size: 22px;
+   font-weight: bold;
+   box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+   border-top: 8px solid;
+   transition: 0.3s;
+}
+.project-card:nth-child(1) { border-top-color:darkorchid; }
+.project-card:nth-child(2) { border-top-color:darkorchid; }
+.project-card:nth-child(3) { border-top-color:darkorchid; }
+.project-card:nth-child(4) { border-top-color:darkorchid; }
+/* Contact Section */
+.contact-box {
+   max-width: 800px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.contact-btn {
+   background-color: burlywood;
+   color: white;
+   padding: 15px 30px;
+   margin: 10px;
+   border-radius: 8px;
+   text-decoration: none;
+   font-weight: bold;
+   font-size: 18px;
+   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+   transition: 0.3s;
+}
+.contact-btn:hover {
+   transform: scale(1.05);
+   background-color:beige;
+   color: #000;
+   box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+/* Fade Animation */
+@keyframes fadeInUp {
+   from { opacity: 0; transform: translateY(30px);}
+   to { opacity: 1; transform: translateY(0);}
+}
+/* Paragraph Style */
+p {
+   font-size: 18px;
+   line-height: 1.6;
+   color: black;
+   font-family: 'Merriweather', serif;
+}
